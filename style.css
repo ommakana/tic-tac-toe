@@ -1,0 +1,37 @@
+body {
+    background-color: #fefae0;
+    text-align: center;
+}
+
+.container {
+    height: 70vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    background-color: #dda15e;
+    font-size: 12vmin;
+    border: none;
+    color: #283618;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px 0 #283618;
+}
+
+#winner-msg {
+    color: #606c38;
+}
