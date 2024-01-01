@@ -4,11 +4,11 @@ body {
 }
 
 .container {
-    height: 70vmin;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 2vmin;
 }
 
 .game {
@@ -34,4 +34,16 @@ body {
 
 #winner-msg {
     color: #606c38;
+    display: none;
+}
+
+.game-btn {
+    background-color: #283618;
+    color: #fefae0;
+    height: 11vmin;
+    width: 22vmin;
+    font-size: 3vmin;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px 0 #283618;
 }

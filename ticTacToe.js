@@ -39,9 +39,17 @@ const checkWinner = () => {
                 boxes[p1].innerHTML === boxes[p2].innerHTML &&
                 boxes[p2].innerHTML === boxes[p3].innerHTML
             ) {
-                console.log("WINNER", boxes[p1].innerHTML);
-                winnerMsgElement.innerHTML = `Winner Player ${boxes[p1].innerHTML} !!!!`
+                winnerMsgElement.innerHTML = `Winner Player ${boxes[p1].innerHTML} !!!!`;
+                winnerMsgElement.style.display = 'block';
             }
         }
     });
 };
+
+function handleReset() {
+    winnerMsgElement.innerHTML = '';
+    boxes.forEach(box => {
+        box.innerHTML = '';
+        box.disabled = false;
+    })
+}
